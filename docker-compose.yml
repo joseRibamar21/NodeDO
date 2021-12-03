@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  #nome do container
+  app:
+    #localizar o doker file
+    build: /
+    #comando a executar assim que a aplicação subir 
+    command: npm start
+    #redirecionamento de portas
+    ports:
+      -"3000:3000"
+    volumes:
+      -.:user/app
